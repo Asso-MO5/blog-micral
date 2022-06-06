@@ -32,7 +32,7 @@ export default function OgBalise({ img, description, title }: props) {
     <Head>
       <script dangerouslySetInnerHTML={matomo()} />
       <title>{metaTitle}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
       <meta property="og:title" content={metaTitle}/>
       <meta property="og:image" content={img ||defaultIMG} />
       <meta property="og:url" content={url} />

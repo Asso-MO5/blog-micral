@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400;1,700&display=swap');
+:root {
+  --color-princ: #4088cf;
+  --color-second: #76b4ee;
+  --color-text: #333;
+  --color-bg:rgb(240, 239, 235)
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: var(--color-bg);
 }
 
 a {
