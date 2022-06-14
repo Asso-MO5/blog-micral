@@ -6,7 +6,6 @@ import PostCard from '../PostCard/PostCard';
 export default function LastPosts() {
   const { data: posts, isLoading, pagination } = useWp("/posts");
 
-  console.log(posts)
   return (
     <div className={classes.container}>
       {posts.map((post: post) => (

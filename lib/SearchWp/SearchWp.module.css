@@ -1,0 +1,136 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.containerClose {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.close {
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  color: white;
+  text-transform: uppercase;
+  background: hsl(
+    var(--color-red-hue),
+    var(--color-red-sat),
+    var(--color-red-light)
+  );
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.page {
+  width: 500px;
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  margin: auto;
+  justify-self: baseline;
+  overflow-y: hidden;
+  
+}
+
+.containerPage {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.results {
+  overflow-x: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5px;
+}
+
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  gap: 3px;
+}
+
+.resultsContainer[data-result="0"] {
+  background: none;
+}
+
+.noResult {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.loading {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.post {
+  position: relative;
+  background: #000;
+  cursor: pointer;
+  display: grid;
+  transition: 200ms ease-in-out;
+}
+
+.post img {
+  width: 100%;
+}
+
+.excerpt {
+  font-style: italic;
+  word-break: break-all;
+}
+
+.postCategorie:after {
+  content: ",";
+}
+
+.postCategorie:last-child:after {
+  content: "";
+}
+
+.post:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px
+    hsl(var(--color-red-hue), var(--color-red-sat), var(--color-red-light));
+  z-index: 10;
+}
+
+.postDesc {
+  padding: 10px;
+}
+
+.postCategories {
+    font-size: 0.8em;
+    color: hsl(
+      var(--color-yellow-hue),
+      var(--color-yellow-sat),
+      var(--color-yellow-light)
+    );
+    text-transform: uppercase;
+  }
+
+@media screen and (max-width: 500px) {
+  .page {
+    width: 100%;
+  }
+}

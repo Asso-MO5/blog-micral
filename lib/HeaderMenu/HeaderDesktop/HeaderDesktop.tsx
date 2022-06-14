@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { MENU_ITEMS } from '../../../interfaces/menu.interface';
 import Logo from '../../Logo/Logo';
 import classes from './HeaderDesktop.module.css';
+import SearchButton from '../../SearchButton/SearchButton';
 
 interface props {
     readonly menu: Array<MENU_ITEMS>;
